@@ -98,6 +98,8 @@ http
 对于 Node.js/Express，可以考虑使用 [connect-history-api-fallback 中间件](https://github.com/bripkens/connect-history-api-fallback)。
 
 ### Internet Information Services (IIS)
+可以直接在默认文档 添加发布时生成的index.html，然后访问就ok了，下面的应该可以不用了
+
 
 1. 安装 [IIS UrlRewrite](https://www.iis.net/downloads/microsoft/url-rewrite)
 2. 在网站的根目录下创建一个 `web.config` 文件，内容如下：
@@ -121,6 +123,8 @@ http
   </system.webServer>
 </configuration>
 ```
+
+
 
 ### Caddy v2
 
